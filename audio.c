@@ -36,7 +36,7 @@ int main() {
     sendMCICommand(mci_command, returnString, sizeof(returnString));
 
     printf("Recording now, press any key to stop...\n");
-    getch(); 
+    _getch(); 
 
     //Stop recording
     sprintf(mci_command, "stop %s", ALIAS);
